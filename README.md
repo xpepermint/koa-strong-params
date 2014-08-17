@@ -2,7 +2,7 @@
 
 ![Build Status](https://travis-ci.org/xpepermint/koa-strong-params.svg?branch=master)&nbsp;[![NPM version](https://badge.fury.io/js/koa-strong-params.svg)](http://badge.fury.io/js/koa-strong-params)&nbsp;[![Dependency Status](https://gemnasium.com/xpepermint/koa-strong-params.svg)](https://gemnasium.com/xpepermint/koa-strong-params)
 
-Rails-style implementation of strong parameters for [Koa](https://github.com/koajs/koa). The middleware adds the `this.params` object to the [Koa context](http://koajs.com/#context) which returns an object merged from the `query string` and `body` params. The returned object has some useful method allows for data `requireing` and `filtering`.
+Rails-style implementation of strong parameters for [Koa](https://github.com/koajs/koa). The middleware adds the `this.params` object to the [Koa context](http://koajs.com/#context) which returns an object, built from `query string` and `request body` data. The returned object has some useful methods allows for data `requiring` and `filtering`.
 
 You should consider using [koa-qs](https://www.npmjs.org/package/koa-qs) and [koa-bodyparser](https://www.npmjs.org/package/koa-bodyparser) packages together with `koa-strong-params`.
 
