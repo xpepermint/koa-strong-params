@@ -1,0 +1,56 @@
+{
+  "name": "koa-strong-params",
+  "version": "0.0.1",
+  "description": "Rails-style implementation of strong parameters for Koa",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --harmony ./node_modules/jasmine-node/bin/jasmine-node ./spec --verbose"
+  },
+  "engines": {
+    "node": ">= 0.11.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xpepermint/koa-strong-params.git"
+  },
+  "keywords": [
+    "koa",
+    "parameter",
+    "parameters",
+    "param",
+    "params",
+    "strongparams",
+    "strong-params",
+    "strongparameters",
+    "strong-parameters",
+    "controller",
+    "controllers",
+    "route",
+    "routes",
+    "routing",
+    "router",
+    "rest",
+    "rails",
+    "security",
+    "filter",
+    "filtering",
+    "body",
+    "strong"
+  ],
+  "author": "xpepermint",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xpepermint/koa-strong-params/issues"
+  },
+  "homepage": "https://github.com/xpepermint/koa-strong-params",
+  "devDependencies": {
+    "jasmine-node": "^2.0.0",
+    "koa": "^0.10.0",
+    "koa-bodyparser": "^1.0.1",
+    "koa-qs": "^1.0.0",
+    "request": "^2.40.0"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
+}
