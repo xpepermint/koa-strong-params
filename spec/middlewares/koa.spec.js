@@ -1,4 +1,4 @@
-var params = require('..');
+var params = require('../..');
 var koa = require('koa');
 var bodyparser = require('koa-bodyparser');
 var qs = require('koa-qs')
@@ -8,7 +8,7 @@ var request = require('request');
 // should always return an instance
 //
 
-describe('middleware', function() {
+describe('koaMiddleware', function() {
 
   beforeEach(function() {
     this.port = 3001;
@@ -16,7 +16,7 @@ describe('middleware', function() {
     this.app = koa();
     qs(this.app);
     this.app.use(bodyparser());
-    this.app.use(params());
+    this.app.use(params.koaMiddleware());
   });
 
   afterEach(function() {
