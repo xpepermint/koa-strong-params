@@ -1,7 +1,7 @@
 {
-  "name": "koa-strong-params",
-  "version": "0.0.3",
-  "description": "Rails-style implementation of strong parameters for Koa",
+  "name": "strong-params",
+  "version": "0.0.0",
+  "description": "Rails-style implementation of strong parameters",
   "main": "index.js",
   "scripts": {
     "test": "node --harmony ./node_modules/jasmine-node/bin/jasmine-node ./spec --verbose"
@@ -11,10 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/xpepermint/koa-strong-params.git"
+    "url": "git://github.com/ssowonny/strong-params.git"
   },
   "keywords": [
     "koa",
+    "express",
     "parameter",
     "parameters",
     "param",
@@ -37,12 +38,12 @@
     "body",
     "strong"
   ],
-  "author": "xpepermint",
+  "author": "ssowonny",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xpepermint/koa-strong-params/issues"
+    "url": "https://github.com/ssowonny/strong-params/issues"
   },
-  "homepage": "https://github.com/xpepermint/koa-strong-params",
+  "homepage": "https://github.com/ssowonny/strong-params",
   "devDependencies": {
     "jasmine-node": "^2.0.0",
     "koa": "^0.10.0",
@@ -51,6 +52,6 @@
     "request": "^2.40.0"
   },
   "dependencies": {
-    "lodash": "^2.4.1"
+    "lodash": "^3.0.0"
   }
 }
