@@ -14,6 +14,14 @@ npm install strong-params --save
 
 #### Attach the middleware.
 
+##### Express
+
+```js
+var express = require('express')
+var params = require('strong-params')
+app.use(params.expressMiddleware())
+```
+
 ##### Koa
 
 ```js
@@ -23,31 +31,23 @@ var app = koa()
 app.use(params.koaMiddleware())
 ```
 
-##### Express
-
-```js
-var express = require('express')
-var params = require('strong-params')
-app.use(params.expressMiddleware())
-```
-
 ## Usage
 
 ### Get strong parameters
-
-##### Koa
-
-```js
-app.use(function *() {
-  var params = this.params
-})
-```
 
 ##### Express
 
 ```js
 app.use(function (req, res, next) {
   var params = req.parameters
+})
+```
+
+##### Koa
+
+```js
+app.use(function *() {
+  var params = this.params
 })
 ```
 
@@ -58,7 +58,7 @@ var strongify = require('strong-params').strongify
 var params = strongify({ key: 'value' })
 ```
 
-### Supporting methods
+### Methods
 
 ```js
 // All available params
@@ -81,3 +81,7 @@ params.require('address').all()
 params.merge({ badge: 'coder' }).permit('name')
 // -> { name: 'Bob', badge: 'coder' }
 ```
+
+## Contributing
+
+Please follow [Contributing](./CONTRIBUTING.md)
