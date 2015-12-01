@@ -4,7 +4,7 @@
   "description": "Rails-style implementation of strong parameters",
   "main": "index.js",
   "scripts": {
-    "test": "node --harmony ./node_modules/jasmine-node/bin/jasmine-node ./spec --verbose"
+    "test": "standard && node --harmony ./node_modules/jasmine-node/bin/jasmine-node ./spec --verbose"
   },
   "engines": {
     "node": ">= 0.11.9"
@@ -45,6 +45,7 @@
   },
   "homepage": "https://github.com/ssowonny/strong-params",
   "devDependencies": {
+    "standard": "^3.0.0",
     "jasmine-node": "^2.0.0",
     "koa": "^0.10.0",
     "koa-bodyparser": "^1.0.1",

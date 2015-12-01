@@ -1,3 +1,4 @@
+/* global describe, beforeEach, afterEach, expect, it */
 var params = require('../..')
 var express = require('express')
 var bodyParser = require('body-parser')
@@ -72,7 +73,7 @@ describe('expressMiddleware', function () {
       })
       this.server = this.app.listen(this.port)
 
-      request.post({ url: this.url + '/?p1[s1]=1&p2=2', form: { p1: { s2: 2 } , a2: 2 } }, function (err, res, body) {
+      request.post({ url: this.url + '/?p1[s1]=1&p2=2', form: { p1: { s2: 2 }, a2: 2 } }, function (err, res, body) {
         expect(JSON.parse(body)).toEqual({ s1: '1', s2: '2' })
         done(err)
       })
